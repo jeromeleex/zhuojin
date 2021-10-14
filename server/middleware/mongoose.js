@@ -1,0 +1,19 @@
+//连接数据库
+const mongoose = require('mongoose')
+
+mongoose
+  .connect("mongodb://localhost:27017/blog2",{
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  })
+  .then(()=>{console.log("数据库连接成功...")})
+  .catch(e=>{console.log("数据库连接失败",e)})
+
+
+
+
+
+
+
+
+
